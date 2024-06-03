@@ -18,4 +18,8 @@ https://accounts.google.com/ServiceLogin?passive=1209600&continue=https://cloud.
 
 https://jftrgoogle.webex.com/jftrgoogle/j.php?MTID=md4aeb5e91664c09c5cf97fc4cf3fb4ea
 
+Google group : https://ind01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fgroups.google.com%2Fd%2Fforum%2Fget_certified-11_2024_q2&data=05%7C02%7Ctijo.thomas%40edelweisstokio.in%7Cfa4064b8c2564041e27608dc74cf0112%7C16a6cf82ea8449e5a55db65a9a2100df%7C0%7C0%7C638513679634475306%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=QqA6XGrbf94%2Bc93t3K5ZxKCcjmMxykkq4mMXMZh0T6U%3D&reserved=0
+
+Troubleshoot mail : https://ind01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fgo.cloudplatformonline.com%2FODA4LUdKVy0zMTQAAAGTALbd6jojCjXid2-mR6cu_0-IXQ2e1NZJum3NuJAKtTTDUnGsKs4zJLEQvA9cdQaQ4_KFyj8%3D&data=05%7C02%7Ctijo.thomas%40edelweisstokio.in%7Cd41df67d6347428d03cb08dc70d00ff9%7C16a6cf82ea8449e5a55db65a9a2100df%7C0%7C0%7C638509286139018590%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=MDUGO2SZqBI1etSVM%2FHPdgFaiSZmW7WFc7s3Z8rNyrA%3D&reserved=0
+
 
