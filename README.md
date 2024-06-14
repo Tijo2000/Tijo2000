@@ -27,5 +27,5 @@ https://forms.gle/LZNEDVzAAAPo8PgH7
 
 2nd stage
 day1 14TH jUNE : meet.google.com/mfs-ytxw-qhg
-drive link : https://docs.google.com/forms/d/e/1FAIpQLSf6bw3TAfkDKQbnLNDNw6PRbWsBJBO2mcAkzXiyigf8wwpbXg/viewform?resourcekey=0-SDojBSiWa4Pj5UK_TOjGqA
+drive link : [https://docs.google.com/forms/d/e/1FAIpQLSf6bw3TAfkDKQbnLNDNw6PRbWsBJBO2mcAkzXiyigf8wwpbXg/viewform?resourcekey=0-SDojBSiWa4Pj5UK_TOjGqA](https://drive.google.com/corp/drive/folders/1fmI3whZ_pWqjdC76vGZU-aidoYz2fqt2?resourcekey=0-Dl5bLW43zcz-SdiCQASJbw)
 
