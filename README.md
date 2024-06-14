@@ -25,4 +25,7 @@ Troubleshoot mail : https://ind01.safelinks.protection.outlook.com/?url=https%3A
 
 https://forms.gle/LZNEDVzAAAPo8PgH7
 
+2nd stage
+day1 14TH jUNE : meet.google.com/mfs-ytxw-qhg
+drive link : https://docs.google.com/forms/d/e/1FAIpQLSf6bw3TAfkDKQbnLNDNw6PRbWsBJBO2mcAkzXiyigf8wwpbXg/viewform?resourcekey=0-SDojBSiWa4Pj5UK_TOjGqA
 
