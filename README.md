@@ -29,3 +29,5 @@ https://forms.gle/LZNEDVzAAAPo8PgH7
 day1 14TH jUNE : meet.google.com/mfs-ytxw-qhg
 drive link : [https://docs.google.com/forms/d/e/1FAIpQLSf6bw3TAfkDKQbnLNDNw6PRbWsBJBO2mcAkzXiyigf8wwpbXg/viewform?resourcekey=0-SDojBSiWa4Pj5UK_TOjGqA](https://drive.google.com/corp/drive/folders/1fmI3whZ_pWqjdC76vGZU-aidoYz2fqt2?resourcekey=0-Dl5bLW43zcz-SdiCQASJbw)
 
+Online group : https://groups.google.com/access-error?continue=https://groups.google.com/g/ace10-getcert_q2_2024
+
