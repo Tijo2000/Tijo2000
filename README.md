@@ -24,6 +24,8 @@ Troubleshoot mail : https://ind01.safelinks.protection.outlook.com/?url=https%3A
 
 https://www.cloudskillsboost.google/catalog?qlcampaign=1m-ggcfs-79
 
+https://www.linkedin.com/redir/redirect?url=https%3A%2F%2Fwww%2Efictionpies%2Ecom&urlhash=93tD&trk=public_profile_topcard-website
+
 
 https://forms.gle/LZNEDVzAAAPo8PgH7
 
