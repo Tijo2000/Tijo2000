@@ -63,12 +63,44 @@ for target in ['T+1', 'T+2', 'T+3']:
     best_cat = train_evaluate_model(cat_cv.best_estimator_, X_train, y_train, X_test, y_test, "CatBoost"). Please generate the propensity for each target . I have stored the agent code values seperately before processing as val_agent_code, You can later store them val_data['T+1pred','T+2pred','T+3pred'] = output
 val_data['AGENT_CODE'] = val_agent_code. My final data is final_data you can later merge these three propensity results onto them using 'AGENT_CODE'
 
-Best parameters for T+1:
-{'scale_pos_weight': 3, 'learning_rate': 0.05, 'l2_leaf_reg': 7, 'iterations': 200, 'depth': 4}
-Best parameters for T+2:
-{'scale_pos_weight': 3, 'learning_rate': 0.05, 'l2_leaf_reg': 7, 'iterations': 200, 'depth': 4}
-Best parameters for T+3:
-{'scale_pos_weight': 3, 'learning_rate': 0.05, 'l2_leaf_reg': 7, 'iterations': 200, 'depth': 4}
 
+
+from catboost import CatBoostClassifier
+
+# Define your training and validation data
+X_train = base_data[variables]
+X_test = val_data[variables]
+
+# Initialize models with the provided best parameters
+model_t1 = CatBoostClassifier(scale_pos_weight=3, learning_rate=0.05, l2_leaf_reg=7, iterations=200, depth=4, random_state=42, verbose=0)
+model_t2 = CatBoostClassifier(scale_pos_weight=3, learning_rate=0.05, l2_leaf_reg=7, iterations=200, depth=4, random_state=42, verbose=0)
+model_t3 = CatBoostClassifier(scale_pos_weight=3, learning_rate=0.05, l2_leaf_reg=7, iterations=200, depth=4, random_state=42, verbose=0)
+
+# Fit the models
+print("\n--- Training model for T+1 ---\n")
+y_train_t1 = base_data['T+1']
+model_t1.fit(X_train, y_train_t1)
+t1_predictions = model_t1.predict_proba(X_test)[:, 1]  # Probability of class 1
+
+print("\n--- Training model for T+2 ---\n")
+y_train_t2 = base_data['T+2']
+model_t2.fit(X_train, y_train_t2)
+t2_predictions = model_t2.predict_proba(X_test)[:, 1]  # Probability of class 1
+
+print("\n--- Training model for T+3 ---\n")
+y_train_t3 = base_data['T+3']
+model_t3.fit(X_train, y_train_t3)
+t3_predictions = model_t3.predict_proba(X_test)[:, 1]  # Probability of class 1
+
+# Assign the predictions to the validation data
+val_data['T+1pred'] = t1_predictions
+val_data['T+2pred'] = t2_predictions
+val_data['T+3pred'] = t3_predictions
+val_data['AGENT_CODE'] = val_agent_code
+
+# Merge predictions with final_data using 'AGENT_CODE'
+final_data = final_data.merge(val_data[['AGENT_CODE', 'T+1pred', 'T+2pred', 'T+3pred']], on='AGENT_CODE', how='left')
+
+# Now final_data contains the predictions for T+1, T+2, and T+3
 
 
