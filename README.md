@@ -35,3 +35,32 @@ drive link : [https://docs.google.com/forms/d/e/1FAIpQLSf6bw3TAfkDKQbnLNDNw6PRbW
 
 Online group : https://groups.google.com/access-error?continue=https://groups.google.com/g/ace10-getcert_q2_2024
 
+
+
+
+
+
+
+Hi i am writing the inference code to predict propensity of agents being active in T+1, T+2 and T+3. Can you train three catboost models for each target with these params and assign the predictions to each agent . You can use this code which I use while experimenting for reference but dont  y_test, coz there's no actual labels to evaluate . X_train = base_data[variables]
+X_test = val_data[variables]
+for target in ['T+1', 'T+2', 'T+3']:
+    print(f"\n--- CatBoost model for {target} ---\n")
+    y_train = base_data[target]
+    y_test = val_data[target]
+    # CatBoost cat_params
+    cat_params = {
+        'iterations': [100, 200, 300],
+        'depth': [4, 6, 8],
+        'learning_rate': [0.01, 0.05, 0.1],
+        'l2_leaf_reg': [1, 3, 5, 7, 9],
+        'scale_pos_weight': [1, 2, 3]  # Added to boost recall
+    }
+    cat = CatBoostClassifier(random_state=42, verbose=0)
+    cat_cv = RandomizedSearchCV(cat, cat_params, n_iter=10, cv=3, scoring='recall', n_jobs=-1, random_state=42)
+    cat_cv.fit(X_train, y_train)  # Fit the model first
+    # Print best parameters
+    print(f"Best parameters for {target}:\n{cat_cv.best_params_}")
+    best_cat = train_evaluate_model(cat_cv.best_estimator_, X_train, y_train, X_test, y_test, "CatBoost"). Please generate the propensity for each target . I have stored the agent code values seperately before processing as val_agent_code, You can later store them val_data['T+1pred','T+2pred','T+3pred'] = output
+val_data['AGENT_CODE'] = val_agent_code. My final data is final_data you can later merge these three propensity results onto them using 'AGENT_CODE'
+
+
