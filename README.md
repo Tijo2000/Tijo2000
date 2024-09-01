@@ -63,4 +63,12 @@ for target in ['T+1', 'T+2', 'T+3']:
     best_cat = train_evaluate_model(cat_cv.best_estimator_, X_train, y_train, X_test, y_test, "CatBoost"). Please generate the propensity for each target . I have stored the agent code values seperately before processing as val_agent_code, You can later store them val_data['T+1pred','T+2pred','T+3pred'] = output
 val_data['AGENT_CODE'] = val_agent_code. My final data is final_data you can later merge these three propensity results onto them using 'AGENT_CODE'
 
+Best parameters for T+1:
+{'scale_pos_weight': 3, 'learning_rate': 0.05, 'l2_leaf_reg': 7, 'iterations': 200, 'depth': 4}
+Best parameters for T+2:
+{'scale_pos_weight': 3, 'learning_rate': 0.05, 'l2_leaf_reg': 7, 'iterations': 200, 'depth': 4}
+Best parameters for T+3:
+{'scale_pos_weight': 3, 'learning_rate': 0.05, 'l2_leaf_reg': 7, 'iterations': 200, 'depth': 4}
+
+
 
