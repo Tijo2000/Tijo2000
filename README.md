@@ -104,3 +104,41 @@ final_data = final_data.merge(val_data[['AGENT_CODE', 'T+1pred', 'T+2pred', 'T+3
 # Now final_data contains the predictions for T+1, T+2, and T+3
 
 
+
+Hi In this code , can you store the three models at the end , X_train = base_data[variables]
+X_test = val_data[variables]
+# Function to train and evaluate a model
+def train_evaluate_model(model, X_train, y_train, X_test, model_name):
+    # Handle class imbalance using SMOTE
+    smote = SMOTE(random_state=42)
+    X_train_resampled, y_train_resampled = smote.fit_resample(X_train, y_train)
+    
+    # Train the model
+    model.fit(X_train_resampled, y_train_resampled)
+    
+    # Make predictions
+    y_pred = model.predict(X_test)
+    
+    return model
+# Model training and tuning for each target
+best_models = {}
+for target in ['T+1', 'T+2', 'T+3']:
+    print(f"\n--- Training models for {target} ---\n")
+    y_train = base_data[target]
+    # y_test = val_data[target]
+    
+    # CatBoost
+    cat_params = {
+        'iterations': [100, 200, 300],
+        'depth': [4, 6, 8],
+        'learning_rate': [0.01, 0.05, 0.1],
+        'l2_leaf_reg': [1, 3, 5, 7, 9],
+        'scale_pos_weight': [1, 2, 3]  # Added to boost recall
+    }
+    cat = CatBoostClassifier(random_state=42, verbose=0)
+    cat_cv = RandomizedSearchCV(cat, cat_params, n_iter=10, cv=3, scoring='recall', n_jobs=-1, random_state=42)
+    cat_cv.fit(X_train, y_train)
+    best_cat = train_evaluate_model(cat_cv.best_estimator_, X_train, y_train, X_test, "CatBoost")
+    
+
+
