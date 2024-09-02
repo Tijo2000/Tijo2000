@@ -142,3 +142,66 @@ for target in ['T+1', 'T+2', 'T+3']:
     
 
 
+
+
+from catboost import CatBoostClassifier
+from imblearn.over_sampling import SMOTE
+from sklearn.model_selection import RandomizedSearchCV
+
+# Define your training and validation data
+X_train = base_data[variables]
+X_test = val_data[variables]
+
+# Function to train and evaluate a model
+def train_evaluate_model(model, X_train, y_train, X_test):
+    # Handle class imbalance using SMOTE
+    smote = SMOTE(random_state=42)
+    X_train_resampled, y_train_resampled = smote.fit_resample(X_train, y_train)
+    
+    # Train the model
+    model.fit(X_train_resampled, y_train_resampled)
+    
+    return model
+
+# Initialize and train models for each target
+best_models = {}
+for target, model_name in zip(['T+1', 'T+2', 'T+3'], ['model_t1', 'model_t2', 'model_t3']):
+    print(f"\n--- Training model for {target} ---\n")
+    y_train = base_data[target]
+    
+    # Best parameters for each model
+    best_params = {
+        'scale_pos_weight': 3,
+        'learning_rate': 0.05,
+        'l2_leaf_reg': 7,
+        'iterations': 200,
+        'depth': 4
+    }
+    
+    # Initialize the CatBoost model with the best parameters
+    cat = CatBoostClassifier(**best_params, random_state=42, verbose=0)
+    
+    # Train and evaluate the model
+    best_model = train_evaluate_model(cat, X_train, y_train, X_test)
+    
+    # Store the model
+    best_models[model_name] = best_model
+
+# Model predictions (optional)
+t1_predictions = best_models['model_t1'].predict_proba(X_test)[:, 1]  # Probability of class 1
+t2_predictions = best_models['model_t2'].predict_proba(X_test)[:, 1]  # Probability of class 1
+t3_predictions = best_models['model_t3'].predict_proba(X_test)[:, 1]  # Probability of class 1
+
+# Assign the predictions to the validation data
+val_data['T+1pred'] = t1_predictions
+val_data['T+2pred'] = t2_predictions
+val_data['T+3pred'] = t3_predictions
+val_data['AGENT_CODE'] = val_agent_code
+
+# Merge predictions with final_data using 'AGENT_CODE'
+final_data = final_data.merge(val_data[['AGENT_CODE', 'T+1pred', 'T+2pred', 'T+3pred']], on='AGENT_CODE', how='left')
+
+# At this point, the best_models dictionary contains the trained models
+# You can access them via best_models['model_t1'], best_models['model_t2'], best_models['model_t3']
+
+
