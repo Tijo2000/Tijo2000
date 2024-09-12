@@ -198,10 +198,12 @@ val_data['T+2pred'] = t2_predictions
 val_data['T+3pred'] = t3_predictions
 val_data['AGENT_CODE'] = val_agent_code
 
-# Merge predictions with final_data using 'AGENT_CODE'
+[# Merge predictions with final_data using 'AGENT_CODE'
 final_data = final_data.merge(val_data[['AGENT_CODE', 'T+1pred', 'T+2pred', 'T+3pred']], on='AGENT_CODE', how='left')
 
 # At this point, the best_models dictionary contains the trained models
-# You can access them via best_models['model_t1'], best_models['model_t2'], best_models['model_t3']
+# You can access them via best_models['model_t1'], best_models['model_t2'], best_models['model_t3']]
+
+(https://resolve-prod.lenovo.com/Lenovo-Field-Services-0.0.1-Resolve/ResolveAp/checkoutConfirmation/FS240929551004267/c248b6ba-5185-4566-a334-b2d4ff2fc0a5/true)
 
 
