@@ -36,7 +36,7 @@ drive link : [https://docs.google.com/forms/d/e/1FAIpQLSf6bw3TAfkDKQbnLNDNw6PRbW
 Online group : https://groups.google.com/access-error?continue=https://groups.google.com/g/ace10-getcert_q2_2024
 
 
-
+https://resolve-prod.lenovo.com/Lenovo-Field-Services-0.0.1-Resolve/ResolveAp/checkoutConfirmation/FS240929551004267/c248b6ba-5185-4566-a334-b2d4ff2fc0a5/true
 
 
 
