@@ -1,7 +1,7 @@
 # Welcome to My GitHub!
 
 ## About Me
-👋 Hi, I’m a **Data Scientist** with over **2 years of experience** in the **life insurance** and **BFSI sectors**. My expertise lies in building predictive models, machine learning, data analytics, and cloud technologies like **Google Cloud Platform (GCP)**. I’m passionate about solving complex business problems with data-driven insights and constantly learning new tools and technologies.
+👋 Hi, I’m a **Data Scientist** with over **2 years of experience** in the **life insurance** and **BFSI sectors**. My expertise lies in building predictive models, machine learning, data analytics, and cloud technologies like **Google Cloud Platform (GCP) and AWS**. I’m passionate about solving complex business problems with data-driven insights and constantly learning new tools and technologies.
 
 ## What I Do
 - 📊 **Data Science & Analytics**: I work on extracting meaningful insights from structured and unstructured data, creating predictive models for business use cases such as customer behavior prediction, churn analysis, and agent activation.
@@ -10,7 +10,7 @@
 - 🛠 **Tech Stack**: 
   - Programming: Python, SQL, Bash
   - ML Libraries: Scikit-learn, CatBoost, TensorFlow
-  - Cloud: GCP (BigQuery, Compute Engine, GKE, Cloud Storage)
+  - Cloud: GCP (BigQuery, Compute Engine, GKE, Cloud Storage), AWS (Sagemaker , Lambda , S3 , ECR , API Gateway
   - Tools: Jupyter, Docker, Git, Kubernetes
 
 ## Featured Projects
