@@ -1,4 +1,5 @@
 # Welcome to My GitHub!
+https://www.linkedin.com/redir/redirect?url=https%3A%2F%2Fbold%2Epro%2Fmy%2Fsandeep-rathod-240911015932&urlhash=SNbF&trk=public_profile_topcard-website
 
 ## About Me
 👋 Hi, I’m a **Data Scientist** with over **2 years of experience** in the **life insurance** and **BFSI sectors**. My expertise lies in building predictive models, machine learning, data analytics, and cloud technologies like **Google Cloud Platform (GCP) and AWS**. I’m passionate about solving complex business problems with data-driven insights and constantly learning new tools and technologies.
