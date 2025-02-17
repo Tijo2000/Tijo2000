@@ -2,48 +2,24 @@
 
 
 ## About Me
-👋 Hi, I’m a **Data Scientist** with over **2 years of experience** in the **life insurance** and **BFSI sectors**. My expertise lies in building predictive models, machine learning, data analytics, and cloud technologies like **Google Cloud Platform (GCP) and AWS**. I’m passionate about solving complex business problems with data-driven insights and constantly learning new tools and technologies.
+# 👋 Hi, I'm Tijo Kottadyil Thomas  
 
-## What I Do
-- 📊 **Data Science & Analytics**: I work on extracting meaningful insights from structured and unstructured data, creating predictive models for business use cases such as customer behavior prediction, churn analysis, and agent activation.
-- 🧠 **Machine Learning**: I build and deploy models using libraries like **Scikit-learn**, **CatBoost**, and **TensorFlow** for predictive analytics and automation in the insurance industry.
-- ☁️ **Cloud Computing (GCP)**: I design scalable, cloud-native architectures for deploying data pipelines, machine learning models, and data analytics workflows.
-- 🛠 **Tech Stack**: 
-  - Programming: Python, SQL, Bash
-  - ML Libraries: Scikit-learn, CatBoost, TensorFlow
-  - Cloud: GCP (BigQuery, Compute Engine, GKE, Cloud Storage), AWS (Sagemaker , Lambda , S3 , ECR , API Gateway
-  - Tools: Jupyter, Docker, Git, Kubernetes
+🚀 **Data Scientist | MLOps Enthusiast | AI Engineer**  
 
-## Featured Projects
+I am passionate about solving real-world problems using **Machine Learning, MLOps, and Cloud Technologies**. My expertise lies in building **scalable ML pipelines, deploying AI models, and working with Generative AI & LLMs**.  
 
-### 1. Life Insurance Agent Activation Prediction
-**Project Purpose**: Developed a predictive model to forecast agent activity for a life insurance company, helping the business plan resource allocation and improve sales strategies.
+💡 **Key Interests:**  
+- Machine Learning & Deep Learning  
+- MLOps & Cloud (AWS | GCP | Azure)  
+- Generative AI & LLMs  
+- Model Deployment & Optimization  
 
-- **Key Features**: 
-  - Predicts whether an agent will be active in selling policies in the next month.
-  - Tackles seasonality with time-series features and rolling averages.
-- **Tech Stack**: Python, CatBoost, GCP (BigQuery, Compute Engine)
-- [View Repository](https://github.com/username/agent-activation-prediction)
+📫 **Let's Connect!**  
+- LinkedIn: [Tijo Thomas](https://www.linkedin.com/in/tijo-thomas-2566601b4)  
+- GitHub: [Tijo2000](https://github.com/Tijo2000)  
 
-### 2. Customer Churn Prediction in BFSI
-**Project Purpose**: Created a machine learning model to predict customer churn, allowing the business to take proactive retention measures.
+📌 **Always exploring, learning, and building AI solutions!**  
 
-- **Key Features**:
-  - Trained on historical customer behavior data.
-  - Includes customer segmentation and risk profiling.
-- **Tech Stack**: Python, Scikit-learn, Pandas
-- [View Repository](https://github.com/username/bfsi-customer-churn)
-
-### 3. Data Science Blog Series
-**Project Purpose**: I write blog posts about practical data science, machine learning concepts, and how they are applied in the BFSI sector.
-
-- Topics: Feature engineering, dealing with imbalanced data, model evaluation.
-- [View Blog](https://github.com/username/datascience-blog)
-
-## How to Use My Projects
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/username/repository-name.git
 
 
 
