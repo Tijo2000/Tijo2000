@@ -2,7 +2,7 @@
 
 
 ## About Me
-# 👋 Hi, I'm Tijo Kottadyil Thomas  
+# 👋 Hi, I'm Tijo Thomas  
 
 🚀 **Data Scientist | MLOps Enthusiast | AI Engineer**  
 
