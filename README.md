@@ -2,7 +2,7 @@
 
 
 ## About Me
-# 👋 Hi, I'm Tijo Thomas  
+# 👋 Hi, I'm Tijo
 
 🚀 **Data Scientist | MLOps Enthusiast | AI Engineer**  
 
